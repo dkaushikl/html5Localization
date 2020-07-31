@@ -17,7 +17,7 @@ xhttp.onreadystatechange = function() {
 	}
 };
 function switchLanguage(language) {
-	xhttp.open('GET', '/public/assets/i18n/' + language + '.json', true);
+	xhttp.open('GET', '/i18n/' + language + '.json', true);
 	xhttp.setRequestHeader('Content-type', 'application/json');
 	xhttp.send();
 }
